@@ -28,7 +28,7 @@ public class RenameTask extends Thread {
             }
             File[] files = dir.listFiles();
             if (files == null) {
-                return;
+                continue;
             }
             for (File f : files) {
                 if (f.isDirectory()) {
